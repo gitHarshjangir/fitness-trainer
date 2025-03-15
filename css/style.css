@@ -334,7 +334,7 @@ ol {
 }
 
 .logo img {
-    max-width: 80px;
+    max-width: 50px;
     height: auto;
     display: block;
     margin-left: 0;
@@ -347,7 +347,7 @@ ol {
         text-align: left !important; /* Force align left */  
     }  
     .logo img {  
-        max-width: 120px; /* Adjust logo size for mobile */  
+        max-width: 60px; /* Adjust logo size for mobile */  
         height: auto;  
         display: block;  
     }  
