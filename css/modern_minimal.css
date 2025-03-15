@@ -1,0 +1,175 @@
+/* ==========================
+   Bootstrap Integrated Minimal CSS - Fixed Layout & Structure
+   ========================== */
+
+/* Import Bootstrap */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header & Navigation */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #000;
+    box-shadow: 0 2px 10px rgba(255, 94, 0, 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.header .logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff6500;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff6500 !important;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 90vh;
+    text-align: left;
+    background: url('hero-bg.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: 50px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ff6500;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    max-width: 600px;
+}
+
+/* Buttons */
+.btn-custom {
+    padding: 14px 28px;
+    background: #ff6500;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin-top: 20px;
+    border: none;
+}
+
+.btn-custom:hover {
+    background: #c13d22;
+}
+
+/* Add this to your CSS file */
+.ts-slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align items */
+    gap: 20px; /* Adjust gap between items */
+}
+
+.ts-item {
+    max-width: 100%;
+    text-align: center; /* Align content properly */
+}
+
+
+.ts-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0; /* Keep sharp corners */
+}
+
+
+
+.ts_text {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    color: #fff;
+}
+
+.ts_text h4 {
+    color: #ff6500;
+    margin-bottom: 5px;
+}
+
+/* Responsive Grid */
+@media (min-width: 1024px) {
+    .ts-slider .ts-item {
+        flex: 1 1 30%; /* Ensures three items in one row */
+    }
+}
+
+@media (max-width: 1023px) {
+    .ts-slider .ts-item {
+        flex: 1 1 45%; /* Two items per row */
+    }
+}
+
+@media (max-width: 767px) {
+    .ts-slider .ts-item {
+        flex: 1 1 90%; /* Full width on mobile */
+    }
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: #fff;
+    margin-top: 50px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
